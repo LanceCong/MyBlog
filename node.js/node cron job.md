@@ -38,3 +38,34 @@ var doSomeJob = function(){
 startCronjob();
 
 ```
+
+> date_util
+
+```js
+	
+	 /**获取今天零点的时间戳*/
+    var getToday = function(){
+        var today = new Date();
+        today.setHours(0);
+        today.setMinutes(0);
+        today.setSeconds(0);
+        today.setMilliseconds(0);
+        return Math.floor(today.getTime()/1000);
+    }
+	
+    /**获取这个月的第一天时间戳*/
+    var getThisMonth = function(){
+        var today = new Date();
+        today.setDate(0);
+        today.setHours(0);
+        today.setMinutes(0);
+        today.setSeconds(0);
+        today.setMilliseconds(0);
+        return Math.floor(today.getTime()/1000);
+    },
+    /**获取实时时间戳*/
+    var getNowTimestamp = function(){
+        return Math.floor(new Date().getTime()/1000);
+    }
+
+```
