@@ -8,7 +8,7 @@ http://weixin.cniotroot.cn/api/jssdk/********NzQ2LjA
 ```
 
 ## 开发你的H5界面，并使用接口快速获取js-sdk环境配置,eg:
-```js
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
